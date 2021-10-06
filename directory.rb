@@ -1,11 +1,9 @@
-student_count = 8
-puts "Ant Man"
-puts "Captain America"
-puts "Spider Man"
-puts "Black Panther"
-puts "Thor"
-puts "Doctor Strange"
-puts "Iron Man"
-puts "Hulk"
 
-puts "We have #{student_count} great students"
+students = ["Ant Man", "Captain America", "Spider Man",
+   "Black Panther", "Thor", "Doctor Strange", "Iron Man", "Hulk"]
+student_count = students.count
+
+puts "The students of Marvel Academy"
+puts "------------------------------"
+students.each {|student| puts student}
+puts "Overall, we have #{student_count} students"
