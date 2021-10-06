@@ -1,6 +1,15 @@
 
-students = ["Ant Man", "Captain America", "Spider Man",
-   "Black Panther", "Thor", "Doctor Strange", "Iron Man", "Hulk"]
+students =[ 
+["Ant Man", :september], 
+["Captain America", :september], 
+["Spider Man", :september],
+["Black Panther", :september],
+["Thor", :september], 
+["Doctor Strange", :september], 
+["Iron Man", :september], 
+["Hulk", :september]]
+
+
 student_count = students.count
 
 def print_header
@@ -9,7 +18,7 @@ def print_header
 end
 
 def print_names(students)
-  students.each {|student| puts student}
+  students.each {|student,start_date| puts "#{student} (start date: #{start_date})"}
 end
 
 def print_footer(student_count)
